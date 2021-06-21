@@ -1,214 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/relative"
+    android:id="@+id/ConstraintLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="409dp"
+        android:layout_height="403dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        android:contentDescription="@string/todo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_1"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="34"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_2"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="7"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_3"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="340"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_4"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="313"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_5"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="286"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_6"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="259"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_7"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="232"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_8"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="205"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_9"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="178"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/white"
+            app:layout_constraintCircle="@+id/fab"
+            app:layout_constraintCircleAngle="151"
+            app:layout_constraintCircleRadius="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/_plus"
+        android:textColor="@color/black"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/minus"
+        android:textColor="@color/black"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/division"
+        android:textColor="@color/black"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/multiplication"
+        android:textColor="@color/black"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="50dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_corners"
+
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/equals"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="140dp"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--    xmlns:tools="http://schemas.android.com/tools"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="match_parent"-->
-    <!--    tools:context=".MainActivity">-->
-
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello World!"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<androidx.constraintlayout.widget.ConstraintLayout-->
-<!--    layout_width=""-->
-<!--    layout_height=""-->
-<!--<RelativeLayout-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:orientation="vertical"-->
-<!--    android:layout_width="fill_parent"-->
-<!--    android:layout_height="fill_parent">-->
-<!--    <Button-->
-<!--        android:id="@+id/center"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        />-->
-<!--    <ImageView-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="#FF00FF00"-->
-<!--        android:layout_above="@id/center"-->
-<!--        android:layout_toLeftOf="@id/center"-->
-<!--        android:layout_marginRight="100dp"-->
-<!--        android:layout_marginBottom="25dp"-->
-<!--        />-->
-<!--    <ImageView-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="#FF00FF00"-->
-<!--        android:layout_below="@id/center"-->
-<!--        android:layout_toLeftOf="@id/center"-->
-<!--        android:layout_marginRight="100dp"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        />-->
-<!--    <ImageView-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="#FF00FF00"-->
-<!--        android:layout_above="@id/center"-->
-<!--        android:layout_toRightOf="@id/center"-->
-<!--        android:layout_marginLeft="100dp"-->
-<!--        android:layout_marginBottom="25dp"-->
-<!--        />-->
-<!--    <ImageView-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:background="#FF00FF00"-->
-<!--        android:layout_below="@id/center"-->
-<!--        android:layout_toRightOf="@id/center"-->
-<!--        android:layout_marginLeft="100dp"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        />-->
-<!--</RelativeLayout>-->
-
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<LinearLayout-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity"-->
-<!--    android:orientation="vertical"-->
-<!--    >-->
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight=".4"-->
-<!--        />-->
-
-<!--    <GridLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:columnCount="4"-->
-<!--        android:rowCount="4"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight=".6">-->
-
-<!--        <Button-->
-<!--            android:text="@string/_1"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:text="@string/_2"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="3"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:text="4"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-<!--        <Button-->
-<!--            android:text="5"-->
-<!--            android:layout_columnWeight="1"-->
-<!--            android:layout_rowWeight="1"-->
-<!--            />-->
-
-<!--    </GridLayout>-->
-
-<!--</LinearLayout>-->
