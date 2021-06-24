@@ -1,183 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/ConstraintLayout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
-
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/fab"
-        android:layout_width="409dp"
-        android:layout_height="403dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.68" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_1"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="34"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_2"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="7"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_3"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="340"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_4"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="313"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_5"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="286"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_6"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="259"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_7"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="232"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_8"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="205"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_9"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="178"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_corners"
-            android:backgroundTint="@color/black"
-            android:gravity="center"
-            android:text="@string/_0"
-            android:textColor="@color/white"
-            app:layout_constraintCircle="@+id/fab"
-            app:layout_constraintCircleAngle="151"
-            app:layout_constraintCircleRadius="150dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/one"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_1"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="34"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/two"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_2"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="7"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/three"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_3"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="340"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/four"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_4"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="313"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/five"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_5"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="286"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/six"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_6"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="259"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seven"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_7"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="232"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/eight"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_8"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="205"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nine"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_9"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="178"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zero"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        app:layout_constraintCircle="@+id/fab"
+        app:layout_constraintCircleAngle="151"
+        app:layout_constraintCircleRadius="@dimen/distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:gravity="center"
@@ -185,14 +192,15 @@
         android:textColor="@color/black"
         app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="45"
-        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintCircleRadius="@dimen/small_distance"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/minus"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:gravity="center"
@@ -200,14 +208,15 @@
         android:textColor="@color/black"
         app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="135"
-        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintCircleRadius="@dimen/small_distance"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/divide"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:gravity="center"
@@ -215,14 +224,15 @@
         android:textColor="@color/black"
         app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="315"
-        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintCircleRadius="@dimen/small_distance"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/multiply"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/calc_button"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:gravity="center"
@@ -230,24 +240,24 @@
         android:textColor="@color/black"
         app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="225"
-        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintCircleRadius="@dimen/small_distance"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="50dp"
-        android:layout_height="130dp"
+        android:id="@+id/equals"
+        android:layout_width="@dimen/calc_button"
+        android:layout_height="@dimen/equals_height"
         android:background="@drawable/rounded_corners"
-
         android:backgroundTint="@color/black"
         android:gravity="center"
         android:text="@string/equals"
         android:textColor="@color/white"
         app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="90"
-        app:layout_constraintCircleRadius="140dp"
+        app:layout_constraintCircleRadius="@dimen/distance"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
