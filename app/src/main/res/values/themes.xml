@@ -15,7 +15,6 @@
     </style>
 
 
-
     <style name="buttonNumLand">
         <item name="android:layout_width">@dimen/calc_button</item>
         <item name="android:layout_height">@dimen/calc_button</item>

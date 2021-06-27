@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 //    android:layout_height="0dp"
 //    app:layout_constraintHeight_percent="[0-1]"
 //    посмотрите на сколько это гибче выглядит на разных экранах
+
     //    Вы воспользовались хитростью, и установили жетскую ориентаци.
 //    Это допустимо, многие так поступают в своих ЛИЧНЫХ проектах, или когда дизайнеры сговорчивые
 //    Но нужно понимать, что если вы планируете устраиваться на галеру, то там от вас будут
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 //    для горизотнтальной ориентации. Будем выводить значения не только в тост, но и в какой-нибудь
 //    тексвью, При этом от вас требуется, чтобы при повороте экрана, значения в текствью не менялись
 //    Иначе пользователь будет расстроен, увидев что вся его работа потеряна
+
+    //  1. Переделайте все кнопки на Материал.
+//  2. Все размеры и строки сделайте ресурсами.
+//  3. Создайте стиль для своего приложения.
     private Calculate calculate;
     private TextView textView;
     private final String KEY = "key_calculate";
@@ -93,11 +98,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putSerializable(KEY, calculate);
     }
-
-//    @Override
-//    protected void onSaveInstanceState(@NonNull Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//    }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
