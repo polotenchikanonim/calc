@@ -3,33 +3,34 @@ package local.kas.calc;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.Serializable;
 
-public class Calculate {
+
+public class Calculate implements Serializable {
 
     private String operation;
     private String firstNumeralS;
     private String secondNumeralS;
+    private String tv;
 
     public Calculate() {
         firstNumeralS = "";
         secondNumeralS = "";
     }
 
-    public void addNumeralS(View v) {
-        String numeralS = ((Button) v).getText().toString();
-        if (getOperation() == null) {
-            setFirstNumeralS(getFirstNumeralS() + numeralS);
-            MainActivity.showToast(v.getContext(), getFirstNumeralS());
-        } else {
-            setSecondNumeralS(getSecondNumeralS() + numeralS);
-            MainActivity.showToast(v.getContext(), getFirstNumeralS() + " " + getOperation() + " " + getSecondNumeralS());
-        }
+    public void setTv(String tv) {
+        this.tv = tv;
     }
 
-    public void addSign(View v) {
+    public String getTv() {
+        return tv;
+    }
+
+    public String addSign(View v) {
         String operation = ((Button) v).getText().toString();
         setOperation(operation);
-        MainActivity.showToast(v.getContext(), getFirstNumeralS() + " " + getOperation());
+        setTv(getFirstNumeralS() + " " + getOperation());
+        return getTv();
     }
 
     public String getFirstNumeralS() {
@@ -94,5 +95,17 @@ public class Calculate {
         setFirstNumeralS("");
         setSecondNumeralS("");
         setOperation(null);
+    }
+
+    public String addNumeral(View v) {
+        String numeralS = ((Button) v).getText().toString();
+        if (getOperation() == null) {
+            setFirstNumeralS(getFirstNumeralS() + numeralS);
+            setTv(getFirstNumeralS());
+        } else {
+            setSecondNumeralS(getSecondNumeralS() + numeralS);
+            setTv(getFirstNumeralS() + " " + getOperation() + " " + getSecondNumeralS());
+        }
+        return getTv();
     }
 }

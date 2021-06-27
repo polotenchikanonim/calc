@@ -5,100 +5,99 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/zdp"
+        android:layout_width="@dimen/zdp"
+        android:layout_height="match_parent"
         android:gravity="center|end"
         android:hint="@string/_0"
         android:paddingHorizontal="@dimen/small_distance"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.48" />
 
     <ImageView
         android:id="@+id/fab"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/zdp"
+        android:layout_width="@dimen/zdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/example"
         android:contentDescription="@string/todo"
-        app:layout_constraintHeight_percent="0.6"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintWidth_percent="0.52" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/one"
-        style="@style/buttonNumPort"
-        android:gravity="center"
+        style="@style/buttonNumLand"
         android:text="@string/_1"
         app:layout_constraintCircleAngle="34"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/two"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_2"
         app:layout_constraintCircleAngle="7"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/three"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_3"
         app:layout_constraintCircleAngle="340"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/four"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_4"
         app:layout_constraintCircleAngle="313"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/five"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_5"
         app:layout_constraintCircleAngle="286"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/six"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_6"
         app:layout_constraintCircleAngle="259"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/seven"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_7"
         app:layout_constraintCircleAngle="232"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/eight"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_8"
         app:layout_constraintCircleAngle="205"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nine"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_9"
         app:layout_constraintCircleAngle="178"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/zero"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:text="@string/_0"
         app:layout_constraintCircleAngle="151"
         tools:ignore="MissingConstraints" />
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plus"
@@ -125,13 +124,13 @@
         android:id="@+id/multiply"
         style="@style/buttonOperation"
         android:text="@string/multiplication"
+        app:layout_constraintCircle="@+id/fab"
         app:layout_constraintCircleAngle="225"
         tools:ignore="MissingConstraints" />
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/equals"
-        style="@style/buttonNumPort"
+        style="@style/buttonNumLand"
         android:layout_height="@dimen/equals_height"
         android:text="@string/equals"
         app:layout_constraintCircleAngle="90"

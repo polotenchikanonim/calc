@@ -9,12 +9,11 @@
         android:roundIcon="@drawable/ic_launcher_clock_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calc">
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
