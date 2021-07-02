@@ -9,6 +9,13 @@
         android:roundIcon="@drawable/ic_launcher_clock_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calc">
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="fullSensor">

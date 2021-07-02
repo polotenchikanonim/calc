@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="stdSizeText">18sp</dimen>
+    <dimen name="margin">8dp</dimen>
+
     <dimen name="calc_button">50dp</dimen>
     <dimen name="distance_port">150dp</dimen>
     <dimen name="distance_land">140dp</dimen>

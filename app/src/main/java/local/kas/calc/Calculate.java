@@ -57,7 +57,7 @@ public class Calculate implements Serializable {
         this.operation = operation;
     }
 
-    public void calcAnswer(View v) {
+    public String calcAnswer(View v) {
         double firstNumeral, secondNumeral;
         firstNumeral = Double.parseDouble(getFirstNumeralS());
         secondNumeral = Double.parseDouble(getSecondNumeralS());
@@ -78,16 +78,20 @@ public class Calculate implements Serializable {
                 break;
         }
         if ((int) answer < answer) {
-            showAnswer(v, String.valueOf(answer));
+            return showAnswer(v, String.valueOf(answer));
         } else {
-            showAnswer(v, String.valueOf((int) answer));
+            return showAnswer(v, String.valueOf((int) answer));
         }
-        clearVariables();
+
+//        clearVariables();
+
     }
 
-    private void showAnswer(View v, String answer) {
-        MainActivity.showToast(v.getContext(), getFirstNumeralS() + " " + getOperation() + " " + getSecondNumeralS() + " = " + answer);
+    private String showAnswer(View v, String answer) {
+//        MainActivity.showToast(v.getContext(), getFirstNumeralS() + " " + getOperation() + " " + getSecondNumeralS() + " = " + answer);
         clearVariables();
+        setTv(getTv() + " = " + answer);
+        return getTv();
     }
 
 

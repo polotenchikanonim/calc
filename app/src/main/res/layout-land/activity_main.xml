@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="@dimen/zdp"
         android:layout_height="match_parent"
         android:gravity="center|end"
@@ -26,7 +26,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/example"
         android:contentDescription="@string/todo"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintWidth_percent="0.52" />
 
     <androidx.appcompat.widget.AppCompatButton
